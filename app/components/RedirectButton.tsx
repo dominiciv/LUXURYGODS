@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function RedirectButton() {
   const targetUrl =
-    "https://api.whatsapp.com/send/?phone=999999999&text=Hola!+Mi+nombre+es+______+Vi+este+anuncio%2C+quiero+un+usuario+por+favor!+gracias.&type=phone_number&app_absent=0"
+    "https://api.whatsapp.com/send/?phone=+543563415379&text=Hola!+Mi+nombre+es+______+Vi+este+anuncio%2C+quiero+un+usuario+por+favor!+gracias.&type=phone_number&app_absent=0"
 
   return (
     <Button
