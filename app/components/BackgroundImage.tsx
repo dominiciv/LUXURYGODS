@@ -4,7 +4,7 @@ export default function BackgroundImage() {
       className="absolute inset-0 z-0"
       style={{
         backgroundImage:
-          "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pagina_1280x720-T3TOfBfZZFcRdXkauNWodQ28Yxag5b.png')",
+          "url('https://imgur.com/a/nSX4DBG')",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
