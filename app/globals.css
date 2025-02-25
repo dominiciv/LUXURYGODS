@@ -59,10 +59,50 @@ body {
     border-color: rgba(255, 215, 0, 0.8);
   }
   .shadow-golden {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
   }
   .bg-custom-bubble {
     background-color: #d8d9c0;
   }
+  .from-golden {
+    --tw-gradient-from: rgba(255, 215, 0, 0.5);
+  }
+  .to-golden {
+    --tw-gradient-to: rgba(255, 215, 0, 0.5);
+  }
+  .text-stroke {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
+
+@keyframes slow-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee-slow {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee2-slow {
+  animation: marquee 30s linear infinite;
 }
 
