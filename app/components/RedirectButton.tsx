@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RedirectButton() {
   const targetUrl =
