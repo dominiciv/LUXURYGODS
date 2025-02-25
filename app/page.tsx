@@ -1,6 +1,18 @@
 import RedirectButton from "./components/RedirectButton"
 import BackgroundImage from "./components/BackgroundImage"
-import { Analytics } from '@vercel/analytics/react';
+import Analytics from '@vercel/analytics/react';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="es">
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
+
 
 export default function Home() {
   return (
@@ -13,14 +25,3 @@ export default function Home() {
   )
 }
 
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="es">
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
